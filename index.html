@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Hub | Terms & Privacy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Modern CSS Reset & Core Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: #0d0e12;
+            background-image: 
+                radial-gradient(circle at 10% 20%, rgba(88, 101, 242, 0.15) 0%, transparent 40%),
+                radial-gradient(circle at 90% 80%, rgba(163, 58, 242, 0.12) 0%, transparent 40%);
+            background-attachment: fixed;
+            color: #e2e8f0;
+            line-height: 1.7;
+            padding: 0 20px;
+        }
+
+        /* Glassmorphism Navigation */
+        header {
+            position: sticky;
+            top: 20px;
+            max-width: 900px;
+            margin: 20px auto 60px auto;
+            background: rgba(22, 24, 33, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            padding: 16px 32px;
+            border-radius: 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+
+        .logo {
+            font-size: 1.25rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            background: linear-gradient(45deg, #5865F2, #a33af2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        nav a {
+            color: #94a3b8;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+            margin-left: 24px;
+            transition: color 0.3s ease, text-shadow 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #fff;
+            text-shadow: 0 0 10px rgba(88, 101, 242, 0.6);
+        }
+
+        /* Main Container */
+        main {
+            max-width: 900px;
+            margin: 0 auto 100px auto;
+        }
+
+        /* Hero / Introduction Section */
+        .hero {
+            text-align: center;
+            margin-bottom: 60px;
+            padding: 40px 20px;
+        }
+
+        .hero h1 {
+            font-size: 2.75rem;
+            font-weight: 800;
+            letter-spacing: -1px;
+            margin-bottom: 16px;
+            color: #ffffff;
+        }
+
+        .hero p {
+            color: #94a3b8;
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Card Section Styling (Glassmorphism) */
+        section {
+            background: rgba(22, 24, 33, 0.45);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.04);
+            border-radius: 24px;
+            padding: 40px;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.15);
+            transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s ease;
+        }
+
+        section:hover {
+            transform: translateY(-4px);
+            border-color: rgba(88, 101, 242, 0.25);
+        }
+
+        section h2 {
+            font-size: 1.75rem;
+            font-weight: 700;
+            margin-bottom: 24px;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        /* Accent indicator line next to headers */
+        section h2::before {
+            content: '';
+            display: inline-block;
+            width: 4px;
+            height: 24px;
+            background: linear-gradient(#5865F2, #a33af2);
+            border-radius: 4px;
+        }
+
+        .policy-block {
+            margin-bottom: 24px;
+        }
+
+        .policy-block:last-child {
+            margin-bottom: 0;
+        }
+
+        .policy-block h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #f1f5f9;
+            margin-bottom: 8px;
+        }
+
+        .policy-block p {
+            color: #94a3b8;
+            font-size: 0.95rem;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            color: #475569;
+            font-size: 0.85rem;
+            margin-top: 60px;
+            border-top: 1px solid rgba(255, 255, 255, 0.04);
+            padding-top: 24px;
+        }
+
+        /* Responsive Design Rules */
+        @media (max-width: 640px) {
+            header {
+                flex-direction: column;
+                gap: 16px;
+                padding: 16px;
+                text-align: center;
+            }
+            nav a {
+                margin: 0 10px;
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+            section {
+                padding: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Application Dashboard</div>
+        <nav>
+            <a href="#tos">Terms of Service</a>
+            <a href="#privacy">Privacy Policy</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="hero">
+            <h1>Legal & Privacy Center</h1>
+            <p>Please review our Terms of Service and Privacy Policy regarding usage and automated data handling.</p>
+        </div>
+
+        <section id="tos">
+            <h2>Terms of Service</h2>
+            
+            <div class="policy-block">
+                <h3>1. Acceptance of Terms</h3>
+                <p>By authorized integration or active interaction with this application within a Discord guild, you accept and agree to comply entirely with these terms, alongside the official Discord Terms of Service.</p>
+            </div>
+
+            <div class="policy-block">
+                <h3>2. Acceptable Use Case</h3>
+                <p>Users must not use this application to execute malicious exploits, intentionally disrupt functionality, crash application instances, or violate the safety guidelines of communities hosting the feature set.</p>
+            </div>
+
+            <div class="policy-block">
+                <h3>3. Disclaimer & Liability Limit</h3>
+                <p>The application service is deployed entirely on an "as-is" structural basis. The developer team maintains zero operational liability for unexpected configuration bugs, server administration actions, or functional downtimes.</p>
+            </div>
+        </section>
+
+        <section id="privacy">
+            <h2>Privacy Policy</h2>
+            
+            <div class="policy-block">
+                <h3>1. Real-Time Data Handling</h3>
+                <p>Our infrastructure functions strictly on transient command triggers. Core fields including specific User Snowflakes (IDs), Guild Identifiers, and target Channel structures are analyzed instantly to fulfill dynamic processing loops.</p>
+            </div>
+
+            <div class="policy-block">
+                <h3>2. No Persistent Profiling</h3>
+                <p>We do not operate remote marketing storage matrices or permanent behavioral indexing logs. Temporary data execution objects are entirely flushed from application volatile memory structures immediately upon sequence resolution.</p>
+            </div>
+
+            <div class="policy-block">
+                <h3>3. Third-Party Restrictions</h3>
+                <p>Data context processed natively through functional interfaces is explicitly private. No structured diagnostic metrics or target details are tracked, shared, or distributed to downstream platforms or outer networks.</p>
+            </div>
+        </section>
+
+        <footer>
+            &copy; 2026 Developer Team. All rights reserved. Built for Discord App Verification.
+        </footer>
+    </main>
+
+</body>
+</html>
